@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusão</title>
+</head>
+<body>
+  <h1>Exclusão de dados do perfil</h1>
+  <form action="">
+    <label for="fname">Nome: </label><br>
+    <input
+      type="text"
+      id="fname"
+      name="fname"
+      placeholder="Digite seu nome"
+      value="João Marcelo"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="email">E-mail: </label><br>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Digite seu e-mail"
+      value="joaomarcelo@gmail.com"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="nasc">Data de nascimento: </label><br>
+    <input
+      type="date"
+      id="nasc"
+      name="nasc"
+      max="2002-12-31"
+      value="1999-05-10"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <div>
+      <label for="sexo">Sexo: </label><br>
+      <input type="radio" name="sexo" id="man" value="homem" checked disabled>
+      <label for="man">Homem</label>
+      <input type="radio" name="sexo" id="male" value="mulher" disabled>
+      <label for="fmale">Mulher</label>
+      <input type="radio" name="sexo" id="other" value="outros" disabled>
+      <label for="other">Outros</label>
+    </div>
+
+    <br>
+
+    <label for="cep">CEP: </label><br>
+    <input
+      type="text"
+      id="cep"
+      name="cep"
+      size="10"
+      maxlength="9"
+      placeholder="CEP"
+      value="60020610"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="endereco">Endereço: </label><br>
+    <input
+      type="text"
+      id="endereco"
+      name="endereco"
+      size="60"
+      placeholder="Digite seu endereço"
+      value="Rua São João Teodoro"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="numero">Numero*: </label><br>
+    <input
+      type="number"
+      id="numero"
+      name="numero"
+      placeholder="Digite o numero da casa"
+      value="350"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="bairro">Bairro: </label><br>
+    <input
+      type="text"
+      id="bairro"
+      name="bairro"
+      size="40"
+      placeholder="Digite seu bairro"
+      value="Bom Jardim"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="cidade">Cidade: </label><br>
+    <input
+      type="text"
+      id="cidade"
+      name="cidade"
+      size="40"
+      placeholder="Digite sua cidade"
+      value="Fortaleza"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="uf">Estado: </label><br>
+    <input
+      type="text"
+      id="uf"
+      name="uf"
+      size="2"
+      placeholder="UF"
+      value="CE"
+      disabled
+    >
+    <br>
+
+    <br>
+
+    <label for="complmento">Complemento: </label><br>
+    <input
+      type="text"
+      id="complmento"
+      name="complmento"
+      value="Esquina com shopping"
+      readonly
+    ><button>Apagar</button>
+  </form>
+</body>
+</html>
