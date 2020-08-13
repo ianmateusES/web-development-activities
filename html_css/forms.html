@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Des. Web</title>
+</head>
+<body>
+  <main class='container'>
+    <header>
+      <h1 id='title'>Projeto adaptado - Des Web</h1>
+      <p id='description'>Obrigado por visitar meu forms</p>
+    </header>
+    <form id='survey-form'>
+      <!-- Nome -->
+      <div class='form-group'>
+        <label id='name-label' for='name'>Nome</label>
+        <input
+          id='name'
+          class='form-control'
+          name='name'
+          type='text'
+          placeholder='Coloque seu nome...'
+          required
+        />
+      </div>
+      <!-- Email -->
+      <div class='form-group'>
+        <label id='email-label' for='email'>Email</label>
+        <input
+          id='email'
+          class='form-control'
+          name='email'
+          type='email'
+          placeholder='Coloque seu email...'
+          required
+        />
+      </div>
+      <!-- Idade -->
+      <div class='form-group'>
+        <label id='number-label' for='idade'>Idade <span class='clue'>(Opcional)</span></label>
+        <input
+          id='number'
+          class='form-control'
+          name='idade'
+          type='number'
+          min='1'
+          max='99'
+          placeholder='Idade'
+        />
+      </div>
+      <!-- Profile -->
+      <div class='form-group'>
+        <label for="dropdown">Qual opção melhor descreve seu estado atual?</label>
+        <select id="dropdown" name="profile" class="form-control" required>
+          <option disabled selected value>Selecione sua ocupação</option>
+          <option value="estudante">Estudante</option>
+          <option value="clt">CLT</option>
+          <option value="viuvo">Viuvo</option>
+          <option value="prefere não dizer">Prefiro não dizer</option>
+          <option value="outro">Outros</option>
+        </select>
+      </div>
+      <!-- Recomendação -->
+      <div class='form-group'>
+        <label>Você recomendaria este projeto?</label>
+        <label>
+          <input
+            class='input-radio'
+            name='user-recommend'
+            type='radio'
+            value='certeza'
+            checked
+          />Com certeza
+        </label>
+        <label>
+          <input
+            class='input-radio'
+            name='user-recommend'
+            type='radio'
+            value='talvez'
+          />Talvez
+        </label>
+        <label>
+          <input
+            class='input-radio'
+            name='user-recommend'
+            type='radio'
+            value='não sei'
+          />Não sei
+        </label>
+      </div>
+      <!-- Favorito -->
+      <div class='form-group'>
+        <label>
+          O que você gostaria de melhorado? <span class='clue'>(Selecione quantas quiser.)</span>
+        </label>
+        <label>
+          <input 
+            class='input-checkbox'
+            name='preferencia'
+            type='checkbox'
+            value='tempo estudar'
+          /> Ter mais tempo para estudar
+        </label>
+        <label>
+          <input 
+            class='input-checkbox'
+            name='preferencia'
+            type='checkbox'
+            value='estudar o que gosta'
+          />Estudar mais o que gosta
+        </label>
+        <label>
+          <input 
+            class='input-checkbox'
+            name='preferencia'
+            type='checkbox'
+            value='gerência projeto'
+          />Gerência de projetos
+        </label>
+        <label>
+          <input 
+            class='input-checkbox'
+            name='preferencia'
+            type='checkbox'
+            value='nodeJS'
+          />NodeJS
+        </label>
+      </div>
+      <div>
+        <label>Algum comentário ou sugestão?</label>
+        <textarea 
+          id='comments'
+          class='input-textarea'
+          name='comment'
+          placeholder='Insira seu comentário ou sugestão aqui...'
+        ></textarea>
+      </div>
+      
+      <button id='submit' class='submit-button' type='submit'>
+        Enviar
+      </button>
+    </form>
+  </main>
+</body>
+</html>
