@@ -3,8 +3,8 @@ const { post } = require("../routes");
 
 module.exports = {
   async store(req, res) {
-    const { login } = req.query;
-    
+    const { login } = req.body;
+
     console.log("Método POST, params: " + login);
 
     return res.json({ login });

@@ -1,5 +1,4 @@
 const express = require('express');
-const configArquivo = require('../config/arquivo');
 const LoginController = require('../controllers/LoginController');
 const LoginFsController = require('../controllers/LoginFsController');
 
