@@ -1,0 +1,99 @@
+:root {
+  --cor-principal: rgb(4, 158, 209);
+  --color-yellow: rgb(255,215,0);
+  --color-green: rgb(152,251,152);
+  --color-gray: rgb(128,128,128);
+  --color-blue: rgb(0,191,255);
+}
+
+body {
+  font-family: 'Robote', sans-serif;
+  background: var(--cor-principal);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: medium;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#titlePrincipal {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#sub1 {
+  color: var(--color-yellow);
+}
+
+#sub2 {
+  color: var(--color-green);
+}
+
+#sub3 {
+  color: var(--color-gray);
+}
+
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input {
+  width: 50%;
+  height: 25px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input button {
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.content .itens {
+  border: solid rgb(109, 107, 107);
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--color-blue);
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
+.itens button {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  background-color: red;
+}
+
+

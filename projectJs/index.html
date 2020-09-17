@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas a fazer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title" id="titlePrincipal">Tarefas a fazer (To do app)</h1>
+    <h3 class="title" id="sub1">Adicione texto dentro da caixa de texto para inserir novas atividades</h3>
+    <h3 class="title" id="sub2">Clique no item para marcar a atividade como completada</h3>
+    <h3 class="title" id='sub3'>Clique no "X" da atividade para remover o item.</h3>
+  </header>
+
+  <div class="input">
+    <input 
+      id="task"
+      type="text" 
+      name="description"
+      placeholder="Nova tarefa..."
+      maxlength="70%"
+      >
+
+    <button id="btn" onclick="add()">Adicionar</button>
+  </div>
+
+  <div id="content" class="content"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
